@@ -1,0 +1,331 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Color",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 163674295387971
+		},
+		{
+			"eventType": "variable",
+			"name": "Glass",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 531405991895139
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 738649059642156
+				}
+			],
+			"actions": [
+				{
+					"id": "set-at-x",
+					"objectClass": "ColoresMapaches",
+					"sid": 582547690917531,
+					"parameters": {
+						"x": "0",
+						"value": "\"Animation1\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "ColoresMapaches",
+					"sid": 630691640712013,
+					"parameters": {
+						"x": "1",
+						"value": "\"Animation2\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "ColoresMapaches",
+					"sid": 776595532946877,
+					"parameters": {
+						"x": "2",
+						"value": "\"Animation3\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "ColoresMapaches",
+					"sid": 705619771479976,
+					"parameters": {
+						"x": "3",
+						"value": "\"Animation4\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Glasses",
+					"sid": 123731299139322,
+					"parameters": {
+						"x": "0",
+						"value": "\"Animation1\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Glasses",
+					"sid": 337365357190838,
+					"parameters": {
+						"x": "1",
+						"value": "\"Animation2\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Glasses",
+					"sid": 758232189746236,
+					"parameters": {
+						"x": "2",
+						"value": "\"Animation3\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Glasses",
+					"sid": 364408370337383,
+					"parameters": {
+						"x": "3",
+						"value": "\"Animation4\""
+					}
+				},
+				{
+					"id": "set-at-x",
+					"objectClass": "Glasses",
+					"sid": 301422516361344,
+					"parameters": {
+						"x": "4",
+						"value": "\"Animation5\""
+					}
+				}
+			],
+			"sid": 963204017558242
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 702879538014954,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Gray"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 399434337199715,
+					"parameters": {
+						"variable": "Color",
+						"comparison": 2,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 873474442372506,
+					"parameters": {
+						"variable": "Color",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Gray",
+					"sid": 177405404006119,
+					"parameters": {
+						"animation": "str(ColoresMapaches.At(Color))",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 376272176852212
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 407258635013747,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Gray"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 255070346980048,
+					"parameters": {
+						"variable": "Color",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 829845483826865,
+					"parameters": {
+						"variable": "Color",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Gray",
+					"sid": 506177391680932,
+					"parameters": {
+						"animation": "str(ColoresMapaches.At(Color))",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 634379613462603
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 436185080999404,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ArrowRight"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 748722199518325,
+					"parameters": {
+						"variable": "Glass",
+						"comparison": 2,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 997844633168182,
+					"parameters": {
+						"variable": "Glass",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 458155826140096,
+					"parameters": {
+						"animation": "str(Glasses.At(Glass))",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 997792902106038
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 264213100775732,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ArrowRight"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 195124302883803,
+					"parameters": {
+						"variable": "Glass",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 756351681683309,
+					"parameters": {
+						"variable": "Glass",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite",
+					"sid": 257764399042455,
+					"parameters": {
+						"animation": "str(Glasses.At(Glass))",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 501425022431735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 859064721775653,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ArrowLeft"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "snapshot-canvas",
+					"objectClass": "System",
+					"sid": 251912313279130,
+					"parameters": {
+						"format": "png",
+						"jpeg-quality": "100"
+					}
+				}
+			],
+			"sid": 839057851718707
+		}
+	],
+	"sid": 725333530982475
+}
