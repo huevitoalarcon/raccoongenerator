@@ -50,12 +50,18 @@
 	"uniqueId": "p0c3quko5oz",
 	"objectTypes": {
 		"items": [
-			"ArrowRight",
-			"ArrowLeft",
+			"GlassesRight",
+			"GlassesLeft",
 			"ColoresMapaches",
 			"Mouse",
 			"Glasses",
-			"Browser"
+			"Browser",
+			"Botonright",
+			"BotonLeft",
+			"Hats",
+			"Sprite2",
+			"neckleft",
+			"neckright"
 		],
 		"subfolders": [
 			{
