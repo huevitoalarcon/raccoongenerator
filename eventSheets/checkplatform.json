@@ -1,0 +1,48 @@
+{
+	"name": "checkplatform",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-mobile",
+					"objectClass": "PlatformInfo",
+					"sid": 650750945309567
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 793854752668798,
+					"parameters": {
+						"layout": "Layout Mobile"
+					}
+				}
+			],
+			"sid": 667471271000453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 641239393480701
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 514929962712408,
+					"parameters": {
+						"layout": "Layout Pc"
+					}
+				}
+			],
+			"sid": 195607874147328
+		}
+	],
+	"sid": 285585239803981
+}

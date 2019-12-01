@@ -1,7 +1,7 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 17103,
-	"name": "New project",
+	"name": "Raccoon Generator",
 	"runtime": "c3",
 	"useWorker": false,
 	"bundleAddons": false,
@@ -45,6 +45,46 @@
 			"author": "Scirra",
 			"version": "r171.3",
 			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r171.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r171.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r171.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "PlatformInfo",
+			"name": "Platform info",
+			"author": "Scirra",
+			"version": "r171.3",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TextBox",
+			"name": "Text input",
+			"author": "Scirra",
+			"version": "r171.3",
+			"bundled": false
 		}
 	],
 	"uniqueId": "p0c3quko5oz",
@@ -59,9 +99,25 @@
 			"Botonright",
 			"BotonLeft",
 			"Hats",
-			"Sprite2",
 			"neckleft",
-			"neckright"
+			"neckright",
+			"Neck",
+			"hatleft",
+			"hatright",
+			"Keyboard",
+			"Sprite4",
+			"Sprite5",
+			"Sprite6",
+			"Sprite7",
+			"Audio",
+			"Sprite",
+			"Sprite2",
+			"Touch",
+			"PlatformInfo",
+			"Text",
+			"TextInput",
+			"Text2",
+			"Sprite3"
 		],
 		"subfolders": [
 			{
@@ -76,10 +132,17 @@
 					},
 					{
 						"items": [
-							"Sprite"
+							"GlassSprites",
+							"AccSprites",
+							"HatSprites"
 						],
 						"subfolders": [],
 						"name": "Accesories"
+					},
+					{
+						"items": [],
+						"subfolders": [],
+						"name": "Neck"
 					}
 				],
 				"name": "Raccoon"
@@ -94,13 +157,17 @@
 	},
 	"layouts": {
 		"items": [
+			"Layout Pc",
+			"Layout Mobile",
 			"Layout 1"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Pc",
+			"Mobile",
+			"checkplatform"
 		],
 		"subfolders": []
 	},
@@ -110,11 +177,25 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Button 6.mp3",
+					"type": "audio/mpeg"
+				},
+				{
+					"name": "camera-shutter-click-03.mp3",
+					"type": "audio/mpeg"
+				}
+			],
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "ice-cream.mp3",
+					"type": "audio/mpeg"
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
@@ -175,10 +256,10 @@
 	"properties": {
 		"description": "",
 		"version": "1.0.0.0",
-		"author": "",
+		"author": "Raccoon Party",
 		"authorEmail": "",
 		"authorWebsite": "",
-		"appId": "",
+		"appId": "cl.raccoonparty.raccoongenerator",
 		"pixelRounding": false,
 		"useLoaderLayout": false,
 		"fullscreenMode": "letterbox-scale",
@@ -218,5 +299,5 @@
 	},
 	"viewportWidth": 640,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "Layout 1"
 }

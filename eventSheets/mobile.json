@@ -1,0 +1,1312 @@
+{
+	"name": "Mobile",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Color2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 183654032860123
+		},
+		{
+			"eventType": "variable",
+			"name": "Hats2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 208997828653378
+		},
+		{
+			"eventType": "variable",
+			"name": "Glass2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 399198274194204
+		},
+		{
+			"eventType": "variable",
+			"name": "Necks2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 796076153140840
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Glasses2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 899008264103807,
+							"parameters": {
+								"object": "Botonright"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Botonright",
+							"sid": 591624091383652,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 685434363354162,
+							"parameters": {
+								"variable": "Glass",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 684775296019779,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "GlassSprites",
+							"sid": 993421969625761,
+							"parameters": {
+								"frame-number": "Glass"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 263985205840942,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Botonright",
+							"sid": 373599582061769,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 807500370228093
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 668001106548133,
+							"parameters": {
+								"object": "Botonright"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 313807122067933,
+							"parameters": {
+								"variable": "Glass",
+								"comparison": 4,
+								"value": "GlassSprites.AnimationFrameCount-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Botonright",
+							"sid": 155375373181740,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 459237514415917,
+							"parameters": {
+								"variable": "Glass",
+								"value": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 698141090257187,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "GlassSprites",
+							"sid": 955999597020234,
+							"parameters": {
+								"frame-number": "Glass"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 816934063550202,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Botonright",
+							"sid": 246867914729812,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 850414107967640
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 398130979918222,
+							"parameters": {
+								"object": "BotonLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 170903083866158,
+							"parameters": {
+								"variable": "Glass",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotonLeft",
+							"sid": 203634575368122,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 421729256057822,
+							"parameters": {
+								"variable": "Glass",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 588987179148133,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "GlassSprites",
+							"sid": 309052305962567,
+							"parameters": {
+								"frame-number": "Glass"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 406316580856337,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotonLeft",
+							"sid": 441295213875112,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 763847781676333
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 244642067923010,
+							"parameters": {
+								"object": "BotonLeft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 205049136679972,
+							"parameters": {
+								"variable": "Glass",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "BotonLeft",
+							"sid": 403434259892155,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 843493402091423,
+							"parameters": {
+								"variable": "Glass",
+								"value": "GlassSprites.AnimationFrameCount-1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 200866048640072,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "GlassSprites",
+							"sid": 517423169661682,
+							"parameters": {
+								"frame-number": "Glass"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 375405059235323,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "BotonLeft",
+							"sid": 723393812585161,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 680536014788582
+				}
+			],
+			"sid": 878290807860579
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hats2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 609775505152993,
+							"parameters": {
+								"object": "hatright"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hatright",
+							"sid": 180799048366041,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 811000983880957,
+							"parameters": {
+								"variable": "Hats",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 178471870909443,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "HatSprites",
+							"sid": 983563944469758,
+							"parameters": {
+								"frame-number": "Hats"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 742935833778308,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hatright",
+							"sid": 219539803455378,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 357212835058560
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 433637151343543,
+							"parameters": {
+								"object": "hatright"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 250309676316759,
+							"parameters": {
+								"variable": "Hats",
+								"comparison": 4,
+								"value": "Hatsprites.AnimationFrameCount-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hatright",
+							"sid": 697393034170756,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 185778024023480,
+							"parameters": {
+								"variable": "Hats",
+								"value": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 251014319291469,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "HatSprites",
+							"sid": 760214093132458,
+							"parameters": {
+								"frame-number": "Hats"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 165006483761711,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hatleft",
+							"sid": 101214928048959,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 406391692802108
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 363407171534297,
+							"parameters": {
+								"object": "hatleft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 967201472450867,
+							"parameters": {
+								"variable": "Hats",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hatleft",
+							"sid": 967365794913332,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 147942061699638,
+							"parameters": {
+								"variable": "Hats",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 804552381477151,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "HatSprites",
+							"sid": 223739823753663,
+							"parameters": {
+								"frame-number": "Hats"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 888344644863718,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hatleft",
+							"sid": 536490416416543,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 519988883391363
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 829360331594557,
+							"parameters": {
+								"object": "hatleft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 571418928790581,
+							"parameters": {
+								"variable": "Hats",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "hatleft",
+							"sid": 580272612833876,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 754739050951416,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 348593239749625,
+							"parameters": {
+								"variable": "Hats",
+								"value": "HatSprites.AnimationFrameCount-1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "HatSprites",
+							"sid": 618444152964375,
+							"parameters": {
+								"frame-number": "Hats"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 227392671022810,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "hatleft",
+							"sid": 242774634903592,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 894524275498647
+				}
+			],
+			"sid": 372692010177725
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Accesory2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 935199370908601,
+							"parameters": {
+								"object": "neckright"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "neckright",
+							"sid": 926957526656125,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 157743605633690,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 327505498081450,
+							"parameters": {
+								"variable": "Necks",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "AccSprites",
+							"sid": 248767270778179,
+							"parameters": {
+								"frame-number": "Necks"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 582436501689520,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "neckright",
+							"sid": 965900889251678,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 149415153614106
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 950549820674254,
+							"parameters": {
+								"object": "neckright"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 892145047201045,
+							"parameters": {
+								"variable": "Necks",
+								"comparison": 4,
+								"value": "AccSprites.AnimationFrameCount-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "neckright",
+							"sid": 825459310986387,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 197447930632997,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 976729072822179,
+							"parameters": {
+								"variable": "Necks",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "AccSprites",
+							"sid": 138396459710243,
+							"parameters": {
+								"frame-number": "Necks"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 282635660983363,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "neckright",
+							"sid": 621919771393216,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 430625070931143
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 471186062219163,
+							"parameters": {
+								"object": "neckleft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 850014342793583,
+							"parameters": {
+								"variable": "Necks",
+								"comparison": 5,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "neckleft",
+							"sid": 904333104929514,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 733275199344477,
+							"parameters": {
+								"variable": "Necks",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 366298171693046,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "AccSprites",
+							"sid": 935569393724724,
+							"parameters": {
+								"frame-number": "Necks"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 683394892483434,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "neckleft",
+							"sid": 167637964698163,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 165416274350519
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 453781837335284,
+							"parameters": {
+								"object": "neckleft"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 986299679485637,
+							"parameters": {
+								"variable": "Necks",
+								"comparison": 3,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "neckleft",
+							"sid": 435252021911766,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 486337664276010,
+							"parameters": {
+								"variable": "Necks",
+								"value": "AccSprites.AnimationFrameCount-1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 143072885570097,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "AccSprites",
+							"sid": 242357184079362,
+							"parameters": {
+								"frame-number": "Necks"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 219155631594206,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "neckleft",
+							"sid": 257439886279148,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 547818277585583
+				}
+			],
+			"sid": 946976565402521
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Body2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 647578145400086,
+							"parameters": {
+								"object": "Sprite3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 228387565243097,
+							"parameters": {
+								"variable": "Color",
+								"comparison": 2,
+								"value": "Gray.AnimationFrameCount"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 211531164639425,
+							"parameters": {
+								"variable": "Color",
+								"value": "1"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 483303591625564,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite3",
+							"sid": 670024680688282,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 567540312498305,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite3",
+							"sid": 919242073613237,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Gray",
+							"sid": 702109044233495,
+							"parameters": {
+								"frame-number": "Color"
+							}
+						}
+					],
+					"sid": 742848497926542
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 756572368435979,
+							"parameters": {
+								"object": "Sprite3"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 424949531469426,
+							"parameters": {
+								"variable": "Color",
+								"comparison": 0,
+								"value": "Gray.AnimationFrameCount-1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 568752757264551,
+							"parameters": {
+								"variable": "Color",
+								"value": "0"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 728608469724352,
+							"parameters": {
+								"audio-file": "Button 6",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite3",
+							"sid": 889216433895146,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 824972397789400,
+							"parameters": {
+								"seconds": "0.1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite3",
+							"sid": 265862378019116,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Gray",
+							"sid": 400903129107250,
+							"parameters": {
+								"frame-number": "Color"
+							}
+						}
+					],
+					"sid": 839610974562271
+				}
+			],
+			"sid": 548180413485864
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Shutter2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-canvas-snapshot",
+							"objectClass": "System",
+							"sid": 571245923888620
+						}
+					],
+					"actions": [
+						{
+							"id": "invoke-download",
+							"objectClass": "Browser",
+							"sid": 170805048493254,
+							"parameters": {
+								"url": "CanvasSnapshot",
+								"filename": "\"RaccoonPartyGames\""
+							}
+						}
+					],
+					"sid": 238256118862359
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 441760554963941,
+							"parameters": {
+								"object": "Sprite7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite7",
+							"sid": 579358528258744,
+							"parameters": {
+								"animation": "\"Pressed\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 183388018639779,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 604625537302559,
+							"parameters": {
+								"audio-file": "camera-shutter-click-03",
+								"loop": "not-looping",
+								"volume": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "snapshot-canvas",
+							"objectClass": "System",
+							"sid": 256042741242273,
+							"parameters": {
+								"format": "png",
+								"jpeg-quality": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 251874012877463,
+							"parameters": {
+								"seconds": "0.2"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Sprite7",
+							"sid": 422339257484919,
+							"parameters": {
+								"animation": "\"Idle\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 896236099622869,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 288417812487619
+				}
+			],
+			"sid": 613519970705093
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 913812874233228
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 608972031385789,
+					"parameters": {
+						"audio-file": "ice-cream",
+						"loop": "not-looping",
+						"volume": "-5",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 935323211746801
+		}
+	],
+	"sid": 357228202330664
+}

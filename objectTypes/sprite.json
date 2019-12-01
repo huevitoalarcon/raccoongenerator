@@ -1,7 +1,7 @@
 {
 	"name": "Sprite",
 	"plugin-id": "Sprite",
-	"sid": 753364262967865,
+	"sid": 981717082037658,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -11,207 +11,19 @@
 			{
 				"frames": [
 					{
-						"width": 201,
-						"height": 100,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 11,
-						"collisionPoly": {
-							"points": [
-								0.08955223880597014,
-								0.18,
-								0.5,
-								0.22,
-								0.9104477611940298,
-								0.17,
-								0.9950248756218906,
-								0.5,
-								0.9104477611940298,
-								0.82,
-								0.5,
-								0.28,
-								0.0845771144278607,
-								0.82,
-								0.004975124378109453,
-								0.5
-							]
-						},
-						"duration": 1
-					}
-				],
-				"sid": 727854634398108,
-				"name": "Animation1",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 203,
-						"height": 66,
+						"width": 480,
+						"height": 480,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
 						"imageSpriteId": 8,
-						"collisionPoly": {
-							"points": [
-								0.09359605911330049,
-								0.015151515151515152,
-								0.5,
-								0.07575757575757576,
-								0.9064039408866995,
-								0,
-								0.9901477832512315,
-								0.5,
-								0.9064039408866995,
-								0.9848484848484849,
-								0.5,
-								0.1666666666666667,
-								0.08866995073891626,
-								0.9848484848484849,
-								0.009852216748768473,
-								0.5
-							]
-						},
 						"duration": 1
 					}
 				],
-				"sid": 151808718863193,
-				"name": "Animation2",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 200,
-						"height": 100,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 10,
-						"collisionPoly": {
-							"points": [
-								0.08955223880597014,
-								0.18,
-								0.5,
-								0.22,
-								0.9104477611940298,
-								0.17,
-								0.9950248756218906,
-								0.5,
-								0.9104477611940298,
-								0.82,
-								0.5,
-								0.28,
-								0.0845771144278607,
-								0.82,
-								0.004975124378109453,
-								0.5
-							]
-						},
-						"duration": 1
-					}
-				],
-				"sid": 434123369148152,
-				"name": "Animation3",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 201,
-						"height": 100,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 9,
-						"collisionPoly": {
-							"points": [
-								0.08955223880597014,
-								0.18,
-								0.5,
-								0.22,
-								0.9104477611940298,
-								0.17,
-								0.9950248756218906,
-								0.5,
-								0.9104477611940298,
-								0.82,
-								0.5,
-								0.28,
-								0.0845771144278607,
-								0.82,
-								0.004975124378109453,
-								0.5
-							]
-						},
-						"duration": 1
-					}
-				],
-				"sid": 847687647611264,
-				"name": "Animation4",
-				"isLooping": false,
-				"isPingPong": false,
-				"repeatCount": 1,
-				"repeatTo": 0,
-				"speed": 5
-			},
-			{
-				"frames": [
-					{
-						"width": 222,
-						"height": 101,
-						"originX": 0.5,
-						"originY": 0.5,
-						"originalSource": "",
-						"exportFormat": "png",
-						"exportQuality": 0.8,
-						"imageSpriteId": 33,
-						"collisionPoly": {
-							"points": [
-								0.08558558558558559,
-								0.18811881188118812,
-								0.5,
-								0,
-								0.9144144144144144,
-								0.1782178217821782,
-								0.9954954954954955,
-								0.5,
-								0.9144144144144144,
-								0.8118811881188119,
-								0.5,
-								0.801980198019802,
-								0.08558558558558559,
-								0.801980198019802,
-								0,
-								0.5
-							]
-						},
-						"duration": 1
-					}
-				],
-				"sid": 652278345224533,
-				"name": "Animation5",
+				"sid": 653135201744787,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
