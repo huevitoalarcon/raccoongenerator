@@ -214,16 +214,6 @@
 								"click-type": "clicked",
 								"object-clicked": "BotonLeft"
 							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 304777973098282,
-							"parameters": {
-								"variable": "Glass",
-								"comparison": 4,
-								"value": "0"
-							}
 						}
 					],
 					"actions": [
@@ -300,10 +290,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 233840292092476,
+							"sid": 850735172313029,
 							"parameters": {
 								"variable": "Glass",
-								"comparison": 3,
+								"comparison": 2,
 								"value": "0"
 							}
 						}
@@ -542,16 +532,6 @@
 								"click-type": "clicked",
 								"object-clicked": "hatleft"
 							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 829141981316176,
-							"parameters": {
-								"variable": "Hats",
-								"comparison": 4,
-								"value": "0"
-							}
 						}
 					],
 					"actions": [
@@ -628,10 +608,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 715175157961195,
+							"sid": 964073868543832,
 							"parameters": {
 								"variable": "Hats",
-								"comparison": 3,
+								"comparison": 2,
 								"value": "0"
 							}
 						}
@@ -1044,16 +1024,6 @@
 								"click-type": "clicked",
 								"object-clicked": "neckleft"
 							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 481146879539672,
-							"parameters": {
-								"variable": "Necks",
-								"comparison": 5,
-								"value": "0"
-							}
 						}
 					],
 					"actions": [
@@ -1130,10 +1100,10 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 489895717684436,
+							"sid": 358621873906720,
 							"parameters": {
 								"variable": "Necks",
-								"comparison": 3,
+								"comparison": 2,
 								"value": "0"
 							}
 						}
